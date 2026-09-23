@@ -1,10 +1,13 @@
 from argon2 import PasswordHasher
 from argon2.exceptions import VerifyMismatchError
+from datetime import datetime
 
 ph = PasswordHasher()
 
 users = {}
 failed_attempts = {}
+lockout_time = {}
+LOCKOUT_DURATION = 5
 
 def register(username, password):
     if username in users:
@@ -23,8 +26,13 @@ def login(username, password):
         return
 
     if failed_attempts[username] >= 3:
-        print("Account locked due to too many failed login attempts.")
-        return
+        elapsed_time =datetime.now() - lockout_time[username]
+        elapsed_minutes = elapsed_time.total_seconds() / 60
+
+        if elapsed_minutes < LOCKOUT_DURATION:
+            print(f"Account is locked. Please try again after {LOCKOUT_DURATION - elapsed_minutes:.2f} minutes.")
+            return
+        
     
     stored_hash = users[username]
     
@@ -33,7 +41,12 @@ def login(username, password):
         print("Login successful.")
     except VerifyMismatchError:
         failed_attempts[username] += 1
-        print("Incorrect password.")
+
+        if failed_attempts[username] == 3:
+            lockout_time[username] = datetime.now()
+            print("Account locked due to too many failed login attempts.")
+        else:
+            print("Incorrect password.")
 
 
 register("aya", "hello123")
@@ -41,4 +54,4 @@ register("aya", "hello123")
 login("aya","2013")
 login("aya", "wrongpassord")
 login("aya", "wrongpassword")
-login("aya","hello123")
+print(lockout_time)
