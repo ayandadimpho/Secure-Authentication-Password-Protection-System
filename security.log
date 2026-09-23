@@ -3,3 +3,29 @@
 2026-09-23 22:22:36.163606 - Test security event
 2026-09-23 22:22:39.361438 - Test security event
 2026-09-23 22:22:42.022015 - Test security event
+2026-09-23 22:31:43.530566 - Test security event
+2026-09-23 22:31:43.828795 - User registered: aya
+2026-09-23 22:35:11.319432 - Test security event
+2026-09-23 22:35:13.984746 - User registered: aya
+2026-09-23 22:35:14.123398 - User logged in: aya
+2026-09-23 22:40:10.593135 - Test security event
+2026-09-23 22:40:10.735236 - User registered: aya
+2026-09-23 22:40:10.851512 - Failed login attempt for user: aya
+2026-09-23 22:40:10.973604 - Failed login attempt for user: aya
+2026-09-23 22:40:11.228036 - Failed login attempt for user: aya
+2026-09-23 22:45:11.390372 - Test security event
+2026-09-23 22:45:11.826756 - User registered: aya
+2026-09-23 22:45:11.962967 - Failed login attempt for user: aya
+2026-09-23 22:45:12.132104 - Failed login attempt for user: aya
+2026-09-23 22:45:12.267262 - Failed login attempt for user: aya
+2026-09-23 22:45:12.268002 - Account locked due to too many failed login attempts for user: aya
+2026-09-23 22:48:40.893369 - Test security event
+2026-09-23 22:48:41.675362 - User registered: aya
+2026-09-23 22:48:41.822390 - Failed login attempt for user: aya
+2026-09-23 22:48:41.823462 - Failed login attempt for non-existent user: asa
+2026-09-23 22:48:42.011231 - Failed login attempt for user: aya
+2026-09-23 22:48:42.276406 - Failed login attempt for user: aya
+2026-09-23 22:48:42.277241 - Account locked due to too many failed login attempts for user: aya
+2026-09-23 22:50:42.403220 - Test security event
+2026-09-23 22:50:42.547712 - User registered: aya
+2026-09-23 22:50:42.548553 - Failed login attempt for non-existent user: asa
