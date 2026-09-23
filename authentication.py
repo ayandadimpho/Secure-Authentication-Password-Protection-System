@@ -2,6 +2,7 @@ from argon2 import PasswordHasher
 from argon2.exceptions import VerifyMismatchError
 from datetime import datetime
 from security_logger import log_event
+from password_checker import validate_password
 
 ph = PasswordHasher()
 
@@ -13,6 +14,10 @@ LOCKOUT_DURATION = 5
 def register(username, password):
     if username in users:
         print("Username already exists.")
+        return
+
+    if not validate_password(password):
+        print("Password does not meet security requirements.")
         return
     
     hashed_password = ph.hash(password)
@@ -46,6 +51,7 @@ def login(username, password):
     
     try:
         ph.verify(stored_hash, password)
+        failed_attempts[username] = 0
         log_event(f"User logged in: {username}")
         print("Login successful.")
     except VerifyMismatchError:
@@ -60,6 +66,7 @@ def login(username, password):
             print("Incorrect password.")
 
 
-register("aya", "hello123")
-login("asa","hello123")
+register("aya", "Hello123!")
+login("aya", "hello")
+login("aya", "Hello123!")
 print(lockout_time)

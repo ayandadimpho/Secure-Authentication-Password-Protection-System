@@ -29,3 +29,17 @@
 2026-09-23 22:50:42.403220 - Test security event
 2026-09-23 22:50:42.547712 - User registered: aya
 2026-09-23 22:50:42.548553 - Failed login attempt for non-existent user: asa
+2026-09-23 23:48:31.745937 - Test security event
+2026-09-23 23:48:31.852232 - Failed login attempt for non-existent user: asa
+2026-09-23 23:49:05.513748 - Test security event
+2026-09-23 23:49:05.748264 - Failed login attempt for non-existent user: asa
+2026-09-23 23:49:05.749170 - Failed login attempt for non-existent user: aya
+2026-09-23 23:49:27.612861 - Test security event
+2026-09-23 23:49:27.614853 - Failed login attempt for non-existent user: aya
+2026-09-23 23:49:27.615597 - Failed login attempt for non-existent user: aya
+2026-09-23 23:49:36.082039 - Test security event
+2026-09-23 23:49:36.084564 - Failed login attempt for non-existent user: aya
+2026-09-23 23:49:36.085503 - Failed login attempt for non-existent user: aya
+2026-09-23 23:50:27.815249 - Test security event
+2026-09-23 23:50:27.819815 - Failed login attempt for non-existent user: aya
+2026-09-23 23:50:27.821055 - Failed login attempt for non-existent user: aya
