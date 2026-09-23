@@ -43,3 +43,8 @@
 2026-09-23 23:50:27.815249 - Test security event
 2026-09-23 23:50:27.819815 - Failed login attempt for non-existent user: aya
 2026-09-23 23:50:27.821055 - Failed login attempt for non-existent user: aya
+2026-09-24 00:53:40.810724 - Test security event
+2026-09-24 00:53:41.107321 - User registered: aya
+2026-09-24 00:53:41.217383 - Failed login attempt for user: aya
+2026-09-24 00:53:41.370726 - User logged in: aya
+2026-09-24 00:53:41.533422 - User registered: testuser
