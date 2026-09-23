@@ -32,6 +32,10 @@ def login(username, password):
         if elapsed_minutes < LOCKOUT_DURATION:
             print(f"Account is locked. Please try again after {LOCKOUT_DURATION - elapsed_minutes:.2f} minutes.")
             return
+
+        else:
+            failed_attempts[username] = 0
+            lockout_time.pop(username)
         
     
     stored_hash = users[username]
@@ -50,7 +54,7 @@ def login(username, password):
 
 
 register("aya", "hello123")
-
+login("aya","hello123")
 login("aya","2013")
 login("aya", "wrongpassord")
 login("aya", "wrongpassword")
