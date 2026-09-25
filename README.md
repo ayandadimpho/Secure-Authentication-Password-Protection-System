@@ -73,10 +73,10 @@ secure-authentication-system/
 git clone <repository-url>
 cd secure-authentication-system
 
-###2. Install the Required dependency
+### 2. Install the Required dependency
 pip install argon2-cfci
 
-###3. Run the authentication system
+### 3. Run the authentication system
 python authentication.py
 
 The system can then be used to register users and test the authentication and security controls.
