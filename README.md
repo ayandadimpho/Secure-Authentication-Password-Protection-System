@@ -83,4 +83,5 @@ The system can then be used to register users and test the authentication and se
 
 
 
-
+## Verification Code
+WTC-WVKZVYHZ
